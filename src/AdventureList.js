@@ -7,7 +7,10 @@ function AdventureList({adventures}) {
 const arrOfAdventures = adventures.map(adventure => <Adventure adventure={adventure}/>)
 
   return (
+      <>
+      <h1>Adventure Recommendations</h1>
     <div> {arrOfAdventures}</div>
+    </>
   )
 }
 
