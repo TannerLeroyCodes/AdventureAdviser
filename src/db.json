@@ -1,0 +1,152 @@
+{
+    "adventures": [
+      {
+        "id": 1,
+        "title": "Ride a Hot Air Balloon",
+        "image": "",
+        "location": "Cappadocia, Turkey",
+        "type": "activity",
+        "moreInfo" : "Take in Turkey's majestic views while riding thousands of feet in the air in a Hot Air Balloon. "
+      },
+      {
+        "id": 2,
+        "title": "Kentucky Derby",
+        "image": "",
+        "location": "Kentucky, USA",
+        "type": "event",
+        "moreInfo" : "Attend one of the most iconic horse races and bring your best hat!"
+      },
+      {
+        "id": 3,
+        "title": "KiteSurf Cabarate",
+        "image": "",
+        "location": "Cabarate, Domincan Republic",
+        "type": "activity",
+        "moreInfo" : "Learn how to kite-surf on a friendly island with sunny skys and steady wind"
+      },
+      {
+        "id": 4,
+        "title": "Machu Picchu",
+        "image": "",
+        "location": "Machu Picchu, Peru",
+        "type": "activity",
+        "moreInfo" : "Spend a day walking around this historic landmark believed to have been built by the Inca Empire in the 15th century"
+      },
+      {
+        "id": 5,
+        "title": "Climb Excalibur",
+        "image": "",
+        "location": "Groningen, Netherlands",
+        "type": "activity",
+        "moreInfo" : "Climb the tallest man-made rock-climbing wall in the World"
+      },
+      {
+        "id": 6,
+        "title": "Scuba in Bay Islands",
+        "image": "",
+        "location": "Utila, Honduras",
+        "type": "activity",
+        "moreInfo" : "Go Scuba Diving at one of the most protected and thriving marine ecosystems on the planet. Did we mention this is also one of the cheapest places to get your PADI scuba certification?"
+      },
+      {
+        "id": 7,
+        "title": "Cherry Blossom Festival",
+        "image": "",
+        "location": "Kyoto, Japan",
+        "type": "event",
+        "moreInfo" : "Cherry Blossom Festival in April"
+      },
+      {
+        "id": 8,
+        "title": "Diwali Mumbai",
+        "image": "",
+        "location": "Mumbai, India",
+        "type": "event",
+        "moreInfo" : "info here"
+      },
+      {
+        "id": 9,
+        "title": "Camp and Hike at Yosemite National Park",
+        "image": "",
+        "location": "California, USA",
+        "type": "activity",
+        "moreInfo" : "Take in unparelled views from atop various mountains. We highly recommened doing the Mist Trail if you make your way there."
+      },
+      {
+        "id": 10,
+        "title": "Skydive",
+        "image": "",
+        "location": "Dubai/Hawaii",
+        "type": "activity",
+        "moreInfo" : ""
+      },
+      {
+        "id": 11,
+        "title": "Running of the Bulls",
+        "image": "",
+        "location": "Pamplona, Spain",
+        "type": "event",
+        "moreInfo" : "info here"
+      },
+      {
+        "id": 12,
+        "title": "Yi Peng Lantern Festival",
+        "image": "",
+        "location": "Chiang Mai, Thailand",
+        "type": "event",
+        "moreInfo" : "Also known as The Festival of Lights, this is an event you wont want to miss. Come particpate and dont forget to make a wish before releasing your lantern.  "
+      },
+      {
+        "id": 13,
+        "title": "Mardi Gras",
+        "image": "",
+        "location": "New Orleans, USA",
+        "type": "event",
+        "moreInfo" : "info here"
+      },
+      {
+        "id": 14,
+        "title": "Whitewater Rafting on the Snake River",
+        "image": "",
+        "location": "Wyoming, USA",
+        "type": "activity",
+        "moreInfo" : "info here"
+      },
+      {
+        "id": 15,
+        "title": "Comedy Show at The Comedy Cellar",
+        "image": "",
+        "location": "New York City, USA",
+        "type": "activity",
+        "moreInfo" : "info here"
+      },
+      {
+        "id": 16,
+        "title": "Attend the World Cup",
+        "image": "",
+        "location": "Qatar",
+        "type": "event",
+        "moreInfo" : "Attend the greatest sporting event on earth, it only comes around once every 4 years. The next World Cup will be hosted in the USA, Mexico, and Canada in 2026!"
+      },
+      {
+        "id": 17,
+        "title": "---",
+        "image": "",
+        "location": "city, country",
+        "type": "activity",
+        "moreInfo" : "info here"
+      },
+      {
+        "id": 18,
+        "title": "----",
+        "image": "",
+        "location": "city, country",
+        "type": "activity",
+        "moreInfo" : "info here"
+      }
+      
+      
+      
+  
+    ]
+  }
