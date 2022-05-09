@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import NavBar from './NavBar';
 import Home from './Home';
 import AdventureList from './AdventureList';
@@ -12,7 +12,7 @@ function App() {
     <>
     <NavBar/>
     <Switch>
-      <Route exact path="/">
+    <Route  path="/">
         <Home/>
       </Route>
       <Route path="/adventures">
@@ -25,7 +25,7 @@ function App() {
 
 
     <div className="App">
-      Hello
+      We've got some work to do. 
     </div>
     </>
   );
