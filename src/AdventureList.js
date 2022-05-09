@@ -1,8 +1,13 @@
 import React from 'react'
+import Adventure from './Adventure'
 
-function AdventureList() {
+function AdventureList({adventures}) {
+
+
+const arrOfAdventures = adventures.map(adventure => <Adventure adventure={adventure}/>)
+
   return (
-    <div>AdventureList</div>
+    <div> {arrOfAdventures}</div>
   )
 }
 
