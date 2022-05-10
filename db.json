@@ -152,15 +152,6 @@
       "type": "event",
       "moreInfo": "Here is info about dogs",
       "id": 18
-    },
-    {
-      "title": "",
-      "image": "",
-      "location": "",
-      "isNew": true,
-      "type": "",
-      "moreInfo": "",
-      "id": 19
     }
   ]
 }
