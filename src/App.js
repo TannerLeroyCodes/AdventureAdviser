@@ -17,13 +17,19 @@ useEffect(()=> {
 }, [])
 
 
+// for form
+function form(obj){
+  const arr = [...adventures, obj]
+  setAdventures(arr)
+}
+
   return (
     <Router>
     <NavBar className={"Navbar"}/>
     <Routes>
       <Route exact path="/" element={<Home/>}/>
       <Route path="/adventures" element={<AdventureList adventures={adventures}/>}/>
-      <Route path="/adventures/new" element={<AdventureSubmit/>} />
+      <Route path="/adventures/new" element={<AdventureSubmit form = {form}/>} />
       <Route path="*" element={<ErrorPage/>} />
     </Routes>
     </Router>
