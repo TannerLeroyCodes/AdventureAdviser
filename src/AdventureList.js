@@ -1,8 +1,11 @@
 import React from 'react'
 import Adventure from './Adventure'
 
-function AdventureList({adventures, onRemoveAdventure, searchInput, setSearchInput}) {
+function AdventureList({adventures, filterBy, onSelect, onRemoveAdventure, searchInput, setSearchInput}) {
 
+  function handleChangeFilter(event){
+    onSelect(event.target.value)
+  }
 
 const arrOfAdventures = adventures.map(adventure => <Adventure key ={adventure.id} adventure={adventure} onRemoveAdventure={onRemoveAdventure}/>)
 
@@ -10,10 +13,15 @@ const arrOfAdventures = adventures.map(adventure => <Adventure key ={adventure.i
       <>
       <h1>Adventure Recommendations</h1>
       <h3>Checkout these events and activities across the globe</h3>
+      <select onChange={handleChangeFilter} value={filterBy}>
+        <option value="" >All Adventures</option>
+        <option value="event" > Events</option>
+        <option value="activity"> Activties</option>
+      </select>
       <input
        type="text"
        id="search"
-       placeholder="Type a name to search..."
+       placeholder="Type a name or country to search..."
        value={searchInput} 
        onChange={(e) => setSearchInput(e.target.value)} 
        />
