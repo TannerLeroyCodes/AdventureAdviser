@@ -38,3 +38,29 @@ body {
          font-size:28px;
          font-style: oblique;
        }
+
+      .submitForm, input {
+        text-align: center;
+        box-sizing: border-box;
+        display:grid;
+        font-family: inherit;
+        font-size: 18px;
+        width : 400px;
+        height: 30px;
+        padding: 20;
+        margin: 3px;
+      }
+
+      .moreInfo {
+        height: 50px;
+      }
+
+     
+
+
+      @media screen and (max-width: 600px) {
+        .col-25, .col-75, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
