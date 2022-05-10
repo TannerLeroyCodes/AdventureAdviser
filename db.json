@@ -29,7 +29,7 @@
     },
     {
       "id": 4,
-      "title": "Machu Picchu",
+      "title": "Explore Machu Picchu",
       "image": "https://media.istockphoto.com/photos/machu-picchu-peru-picture-id930824730?b=1&k=20&m=930824730&s=170667a&w=0&h=1JxLd3OP8-U95vnds4j9sK671dITJq7JuSkGdIMP3Gw=",
       "location": "Machu Picchu, Peru",
       "type": "activity",
@@ -65,7 +65,7 @@
     },
     {
       "id": 8,
-      "title": "The Great Pyramid of Giza",
+      "title": "Visit The Great Pyramid of Giza",
       "image": "https://media.gettyimages.com/photos/great-pyramids-and-the-camel-caravan-is-in-front-of-the-egyptian-picture-id1331913108?s=612x612",
       "location": "Greater Cairo, Eygpt",
       "type": "activity",
