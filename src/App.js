@@ -17,19 +17,25 @@ useEffect(()=> {
 }, [])
 
 
-// for form
-function form(obj){
+function addSubmit(obj){
   const arr = [...adventures, obj]
   setAdventures(arr)
 }
+
+function handleRemoveAdventure(id) {
+  const filteredAdventures = adventures.filter(adventure => adventure.id !== id)
+  setAdventures(filteredAdventures)
+}
+
+
 
   return (
     <Router>
     <NavBar className={"Navbar"}/>
     <Routes>
       <Route exact path="/" element={<Home/>}/>
-      <Route path="/adventures" element={<AdventureList adventures={adventures}/>}/>
-      <Route path="/adventures/new" element={<AdventureSubmit form = {form}/>} />
+      <Route path="/adventures" element={<AdventureList onRemoveAdventure={handleRemoveAdventure}adventures={adventures}/>}/>
+      <Route path="/adventures/new" element={<AdventureSubmit addSubmit={addSubmit}/>} />
       <Route path="*" element={<ErrorPage/>} />
     </Routes>
     </Router>

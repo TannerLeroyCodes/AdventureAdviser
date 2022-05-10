@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Adventure({adventure}) {
+function Adventure({adventure, onRemoveAdventure}) {
 
 function handleClick(){
     fetch(`http://localhost:8000/adventures/${adventure.id}`, {"method": "delete"});
-
+    onRemoveAdventure(adventure.id)
 }
 
   return (

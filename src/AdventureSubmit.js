@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-function AdventureSubmit({form}) {
+function AdventureSubmit({addSubmit}) {
 
   const [title, setTitle] = useState("")
   const [image, setImage] = useState("")
@@ -23,7 +23,14 @@ function AdventureSubmit({form}) {
       headers: {'Content-Type': 'application/json'}, 
       body: JSON.stringify(obj)
     })
-    form(obj)
+    addSubmit(obj)
+
+    setTitle("")
+    setImage("")
+    setLocation("")
+    setType("")
+    setMoreInfo("")
+
   }
 
   return (
@@ -31,13 +38,13 @@ function AdventureSubmit({form}) {
     <label>Enter title here</label>
     <input type="text" placeholder="title" value={title} onChange={(e) => setTitle(e.target.value)}/>
     <label>Enter image here:</label>
-    <input type="text" placeholder="image" value={image} onChange={(e) => setImage(e.target.value)}/>
+    <input type="text" placeholder="imageURL" value={image} onChange={(e) => setImage(e.target.value)}/>
     <label>Enter location here:</label>
     <input type="text" placeholder="location" value={location} onChange={(e) => setLocation(e.target.value)}/>
     <label>Enter type here:</label>
-    <input type="text" placeholder="type" value={type} onChange={(e) => setType(e.target.value)}/>
+    <input type="text" placeholder="event or activity" value={type} onChange={(e) => setType(e.target.value)}/>
     <label>Enter your info here:</label>
-    <input type="text" placeholder="moreInfo" value={moreInfo} onChange={(e) => setMoreInfo(e.target.value)}/>
+    <input type="text" placeholder="more information" value={moreInfo} onChange={(e) => setMoreInfo(e.target.value)}/>
     <button type="submit">Add The Event!</button>
     </form>
 
