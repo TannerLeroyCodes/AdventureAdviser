@@ -10,6 +10,7 @@ function App() {
 
 const [adventures, setAdventures] = useState([])
 const [searchInput, setSearchInput] = useState('')
+const [filterBy, setFilterBy] = useState("")
 
 useEffect(()=> {
   fetch("http://localhost:8000/adventures")
@@ -27,18 +28,25 @@ function handleRemoveAdventure(id) {
   const filteredAdventures = adventures.filter(adventure => adventure.id !== id)
   setAdventures(filteredAdventures)
 }
+function handleSelect(e){
+  setFilterBy(e)
+}
 
 // searchAdventures
 const searchAdventures = adventures.filter(adventure => {
   return adventure.title.toLowerCase().includes(searchInput.toLowerCase()) || adventure.location.toLowerCase().includes(searchInput.toLocaleLowerCase())
 })
 
+const filteredAdventures = searchAdventures.filter(adventure => 
+  adventure.type.includes(filterBy)  
+  )
+
   return (
     <Router>
     <NavBar className={"Navbar"}/>
     <Routes>
       <Route exact path="/" element={<Home/>}/>
-      <Route path="/adventures" element={<AdventureList onRemoveAdventure={handleRemoveAdventure}adventures={searchAdventures} searchInput={searchInput} setSearchInput={setSearchInput}/>}/>
+      <Route path="/adventures" element={<AdventureList filterBy={filterBy} onSelect={handleSelect} onRemoveAdventure={handleRemoveAdventure}adventures={filteredAdventures} searchInput={searchInput} setSearchInput={setSearchInput}/>}/>
       <Route path="/adventures/new" element={<AdventureSubmit addSubmit={addSubmit}/>} />
       <Route path="*" element={<ErrorPage/>} />
     </Routes>
