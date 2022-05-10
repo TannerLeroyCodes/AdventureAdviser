@@ -8,7 +8,7 @@ function handleClick(){
 }
 
   return (
-      <li className={"card"} isNew={adventure.isNew}>
+      <li className={"card"} >
     <div className={"adventureTitles"}> {adventure.title}</div>
     <img src={adventure.image} className={"image"} height={400} width={550}></img>
     <div>Location: {adventure.location}</div>
