@@ -10,7 +10,7 @@ function App() {
 
 const [adventures, setAdventures] = useState([])
 const [searchInput, setSearchInput] = useState('')
-const [filterBy, setFilterBy] = useState("All Adventures")
+const [filterBy, setFilterBy] = useState("event")
 
 useEffect(()=> {
   fetch("http://localhost:8000/adventures")
@@ -37,7 +37,9 @@ const searchAdventures = adventures.filter(adventure => {
   return adventure.title.toLowerCase().includes(searchInput.toLowerCase()) || adventure.location.toLowerCase().includes(searchInput.toLocaleLowerCase())
 })
 
-const filteredAdventures = searchAdventures.filter(adventure => adventure.type === filterBy)
+const filteredAdventures = searchAdventures.filter(adventure => 
+  adventure.type === filterBy
+  )
 
   return (
     <Router>
