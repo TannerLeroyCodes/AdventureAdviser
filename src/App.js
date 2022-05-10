@@ -30,7 +30,7 @@ function handleRemoveAdventure(id) {
 
 // searchAdventures
 const searchAdventures = adventures.filter(adventure => {
-  return adventure.title.location.toLowerCase().includes(searchInput.toLowerCase())
+  return adventure.title.toLowerCase().includes(searchInput.toLowerCase()) || adventure.location.toLowerCase().includes(searchInput.toLocaleLowerCase())
 })
 
   return (
@@ -38,7 +38,7 @@ const searchAdventures = adventures.filter(adventure => {
     <NavBar className={"Navbar"}/>
     <Routes>
       <Route exact path="/" element={<Home/>}/>
-      <Route path="/adventures" element={<AdventureList onRemoveAdventure={handleRemoveAdventure}adventures={adventures} searchInput={searchInput} setSearchInput={setSearchInput}/>}/>
+      <Route path="/adventures" element={<AdventureList onRemoveAdventure={handleRemoveAdventure}adventures={searchAdventures} searchInput={searchInput} setSearchInput={setSearchInput}/>}/>
       <Route path="/adventures/new" element={<AdventureSubmit addSubmit={addSubmit}/>} />
       <Route path="*" element={<ErrorPage/>} />
     </Routes>
