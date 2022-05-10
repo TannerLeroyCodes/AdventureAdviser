@@ -1,10 +1,10 @@
 import React from 'react'
 import Adventure from './Adventure'
 
-function AdventureList({adventures}) {
+function AdventureList({adventures, onRemoveAdventure}) {
 
 
-const arrOfAdventures = adventures.map(adventure => <Adventure key ={adventure.id} adventure={adventure}/>)
+const arrOfAdventures = adventures.map(adventure => <Adventure key ={adventure.id} adventure={adventure} onRemoveAdventure={onRemoveAdventure}/>)
 
   return (
       <>
