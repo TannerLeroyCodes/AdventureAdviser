@@ -9,6 +9,7 @@ import ErrorPage from './ErrorPage';
 function App() {
 
 const [adventures, setAdventures] = useState([])
+const [searchInput, setSearchInput] = useState('')
 
 useEffect(()=> {
   fetch("http://localhost:8000/adventures")
@@ -27,14 +28,17 @@ function handleRemoveAdventure(id) {
   setAdventures(filteredAdventures)
 }
 
-
+// searchAdventures
+const searchAdventures = adventures.filter(adventure => {
+  return adventure.title.location.toLowerCase().includes(searchInput.toLowerCase())
+})
 
   return (
     <Router>
     <NavBar className={"Navbar"}/>
     <Routes>
       <Route exact path="/" element={<Home/>}/>
-      <Route path="/adventures" element={<AdventureList onRemoveAdventure={handleRemoveAdventure}adventures={adventures}/>}/>
+      <Route path="/adventures" element={<AdventureList onRemoveAdventure={handleRemoveAdventure}adventures={adventures} searchInput={searchInput} setSearchInput={setSearchInput}/>}/>
       <Route path="/adventures/new" element={<AdventureSubmit addSubmit={addSubmit}/>} />
       <Route path="*" element={<ErrorPage/>} />
     </Routes>
