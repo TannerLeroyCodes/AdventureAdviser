@@ -28,3 +28,8 @@ body {
            box-shadow: 0 0 10px 0 #000000;
            padding-bottom: 10px;
        }
+
+       .adventureTitles {
+         font-size:28px;
+         font-style: oblique;
+       }

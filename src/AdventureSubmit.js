@@ -14,6 +14,7 @@ function AdventureSubmit({form}) {
       title: title, 
       image: image,
       location: location,
+      isNew: true,
       type: type,
       moreInfo: moreInfo
     }
