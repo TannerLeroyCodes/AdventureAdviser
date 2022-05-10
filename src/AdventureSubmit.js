@@ -31,23 +31,30 @@ function AdventureSubmit({addSubmit}) {
     setType("")
     setMoreInfo("")
 
+    alert("Thank you for your contribution!")
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+<>
+<h1> Submit an Adventure of your own</h1>
+<h3>Use this form to recommend an event or activity to the community</h3>
+
+    <div className={"submitForm"}>
+    <form  onSubmit={handleSubmit}>
     <label>Enter title here</label>
-    <input type="text" placeholder="title" value={title} onChange={(e) => setTitle(e.target.value)}/>
+    <input className={"input"} type="text" placeholder="title" value={title} onChange={(e) => setTitle(e.target.value)}/>
     <label>Enter image here:</label>
-    <input type="text" placeholder="imageURL" value={image} onChange={(e) => setImage(e.target.value)}/>
+    <input className={"input"} type="text" placeholder="imageURL" value={image} onChange={(e) => setImage(e.target.value)}/>
     <label>Enter location here:</label>
-    <input type="text" placeholder="location" value={location} onChange={(e) => setLocation(e.target.value)}/>
+    <input className={"input"} type="text" placeholder="location" value={location} onChange={(e) => setLocation(e.target.value)}/>
     <label>Enter type here:</label>
-    <input type="text" placeholder="event or activity" value={type} onChange={(e) => setType(e.target.value)}/>
+    <input className={"input"} type="text" placeholder="event or activity" value={type} onChange={(e) => setType(e.target.value)}/>
     <label>Enter your info here:</label>
-    <input type="text" placeholder="more information" value={moreInfo} onChange={(e) => setMoreInfo(e.target.value)}/>
+    <input className={"moreInfo"} type="text" placeholder="more information" value={moreInfo} onChange={(e) => setMoreInfo(e.target.value)}/>
     <button type="submit">Add The Event!</button>
     </form>
-
+    </div>
+</>
   )
 }
 

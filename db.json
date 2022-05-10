@@ -143,6 +143,24 @@
       "type": "event",
       "isNew": false,
       "moreInfo": "Attend the greatest sporting event on earth, it only comes around once every 4 years. The next World Cup will be hosted in the USA, Mexico, and Canada in 2026!"
+    },
+    {
+      "title": "Dogs",
+      "image": "www.dogs.com",
+      "location": "Everywhere",
+      "isNew": true,
+      "type": "event",
+      "moreInfo": "Here is info about dogs",
+      "id": 18
+    },
+    {
+      "title": "",
+      "image": "",
+      "location": "",
+      "isNew": true,
+      "type": "",
+      "moreInfo": "",
+      "id": 19
     }
   ]
 }
