@@ -9,7 +9,7 @@ const arrOfAdventures = adventures.map(adventure => <Adventure adventure={advent
   return (
       <>
       <h1>Adventure Recommendations</h1>
-    <div> {arrOfAdventures}</div>
+    <ul> {arrOfAdventures}</ul>
     </>
   )
 }
