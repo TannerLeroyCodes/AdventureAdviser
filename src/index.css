@@ -4,9 +4,17 @@ body {
         padding: 40px;
         font-family: Arial;
         text-align: center;
-        border: 10px;
       }
 
-.Navbar {
-    background-color: red;
-}
+      .navBarLink {
+        margin: 5px;
+    
+      }
+
+      .navBar {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+      }
