@@ -10,7 +10,7 @@ function App() {
 
 const [adventures, setAdventures] = useState([])
 const [searchInput, setSearchInput] = useState('')
-const [filterBy, setFilterBy] = useState("event")
+const [filterBy, setFilterBy] = useState("")
 
 useEffect(()=> {
   fetch("http://localhost:8000/adventures")
@@ -38,7 +38,7 @@ const searchAdventures = adventures.filter(adventure => {
 })
 
 const filteredAdventures = searchAdventures.filter(adventure => 
-  adventure.type === filterBy
+  adventure.type.includes(filterBy)  
   )
 
   return (
