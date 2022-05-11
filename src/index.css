@@ -1,5 +1,10 @@
 body {
-        background-color: #3474f3;
+        /* background-color: #3474f3; */
+        /* Created with https://www.css-gradient.com */
+background: #1457bc;
+background: -webkit-radial-gradient(top left, #032657, #090564);
+background: -moz-radial-gradient(top left, #1E75F2, #090564);
+background: radial-gradient(to bottom right, #1E75F2, #090564);
         color: white;
         padding: 40px;
         font-family: Arial;
@@ -41,8 +46,9 @@ body {
 
       .submitForm, input {
         text-align: center;
+        display: inline-block;
         box-sizing: border-box;
-        display:grid;
+        /* display:grid; */
         font-family: inherit;
         font-size: 18px;
         width : 400px;
