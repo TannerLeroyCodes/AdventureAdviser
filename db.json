@@ -25,7 +25,7 @@
       "location": "Cabarate, Domincan Republic",
       "type": "activity",
       "isNew": false,
-      "moreInfo": "Learn how to kite-surf on a friendly island with sunny skys and steady wind"
+      "moreInfo": "Learn how to kite-surf on a friendly island with sunny skys and steady wind."
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "location": "Machu Picchu, Peru",
       "type": "activity",
       "isNew": false,
-      "moreInfo": "Spend a day walking around this historic landmark believed to have been built by the Inca Empire in the 15th century"
+      "moreInfo": "Spend a day walking around this historic landmark believed to have been built by the Inca Empire in the 15th century."
     },
     {
       "id": 5,
@@ -61,7 +61,7 @@
       "location": "Kyoto, Japan",
       "type": "event",
       "isNew": false,
-      "moreInfo": "Come witness the largest Cherry Blossom Festival in Kyoto. The city, known for its museums and art's district, comes to life during this picturesque season"
+      "moreInfo": "Come witness the largest Cherry Blossom Festival in Kyoto. The city, known for its museums and art's district, comes to life during this picturesque season."
     },
     {
       "id": 8,
@@ -97,7 +97,7 @@
       "location": "Pamplona, Spain",
       "type": "event",
       "isNew": false,
-      "moreInfo": "Witness this cultural spectacle as Spanish fighting bulls and steers run through the cities' streets"
+      "moreInfo": "Witness this cultural spectacle as Spanish fighting bulls and steers run through the cities' streets."
     },
     {
       "id": 12,
@@ -151,7 +151,7 @@
       "location": "Hawaii, USA",
       "type": "activity",
       "isNew": false,
-      "moreInfo": "Take the leap at this historic landmark at a cliff worth diving from"
+      "moreInfo": "Take the leap at this historic cliff diving landmark on south side of Lanai."
   }
   ]
 }
