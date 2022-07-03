@@ -18,7 +18,7 @@ function AdventureSubmit({addSubmit}) {
       type: type,
       moreInfo: moreInfo
     }
-    fetch("http://localhost:8000/adventures", {
+    fetch("https://adventure-adviser-backend-hero.herokuapp.com/adventures", {
       method: "POST",
       headers: {'Content-Type': 'application/json'}, 
       body: JSON.stringify(obj)

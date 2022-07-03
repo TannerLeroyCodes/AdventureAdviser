@@ -3,7 +3,7 @@ import React from 'react'
 function Adventure({adventure, onRemoveAdventure}) {
 
 function handleClick(){
-    fetch(`http://localhost:8000/adventures/${adventure.id}`, {"method": "delete"});
+    fetch(`https://adventure-adviser-backend-hero.herokuapp.com/adventures/${adventure.id}`, {"method": "delete"});
     onRemoveAdventure(adventure.id)
 }
 

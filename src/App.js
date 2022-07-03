@@ -13,7 +13,7 @@ const [searchInput, setSearchInput] = useState('')
 const [filterBy, setFilterBy] = useState("")
 
 useEffect(()=> {
-  fetch("http://localhost:8000/adventures")
+  fetch("https://adventure-adviser-backend-hero.herokuapp.com/adventures")
   .then(r => r.json())
   .then(data => setAdventures(data))
 }, [])
